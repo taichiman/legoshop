@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/deivid-rodriguez/byebug.git
+  revision: ddf7393c45f2a4fc9997c85f2ee7ccfccc820235
+  specs:
+    byebug (2.4.1)
+      columnize (~> 0.3.6)
+      debugger-linecache (~> 1.2.0)
+
+GIT
   remote: git://github.com/spree/spree_i18n.git
   revision: 5d3cb47c38efc7d0af425bb2cf2b54f94f2c1368
   branch: 2-1-stable
@@ -98,6 +106,8 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     colorize (0.6.0)
+    columnize (0.3.6)
+    debugger-linecache (1.2.0)
     deface (1.0.0)
       colorize (>= 0.5.8)
       nokogiri (~> 1.6.0)
@@ -301,6 +311,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  byebug!
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
