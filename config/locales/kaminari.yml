@@ -1,0 +1,19 @@
+# Sample localization file for Kaminari. You can override these values in your app's locales file if you want.
+
+ru:
+  views:
+    pagination:
+      first: "&laquo; первая"
+      last: "последняя &raquo;"
+      previous: "&lsaquo; предыдущая"
+      next: "следующая &rsaquo;"
+      truncate: "&hellip;"
+  helpers:
+    page_entries_info:
+      one_page:
+        display_entries:
+          zero: "%{entry_name} не найдена"
+          one: "показана <b>1</b> %{entry_name}"
+          other: "показаны <b>все %{count}</b> %{entry_name}"
+      more_pages:
+        display_entries: "показывается %{entry_name} <b>%{first}&nbsp;-&nbsp;%{last}</b> из <b>%{total}</b>"

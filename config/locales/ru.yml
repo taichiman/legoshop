@@ -1,3 +1,6 @@
 ru:
   spree:
     no_images_found: Нет изображения
+    add_to_cart: +Добавить в корзину
+    subtotal: Стоимость
+    login: Войти
