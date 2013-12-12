@@ -9,7 +9,16 @@ Spree.config do |config|
   # Example:
   # Uncomment to override the default site name.
   # config.site_name = "Spree Demo Site"
+  
+  config.always_include_confirm_step = true
   config.show_only_complete_orders_by_default = false
+
+  config.currency = "RUB"
+  config.currency_decimal_mark = "."
+  config.currency_symbol_position = "after"
+  config.currency_sign_before_symbol = false
+  config.currency_thousands_separator = ","
+  config.display_currency = false
 end
 
 Spree.user_class = "Spree::User"
