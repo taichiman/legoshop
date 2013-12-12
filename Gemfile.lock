@@ -1,4 +1,22 @@
 GIT
+  remote: git://github.com/deivid-rodriguez/byebug.git
+  revision: ddf7393c45f2a4fc9997c85f2ee7ccfccc820235
+  specs:
+    byebug (2.4.1)
+      columnize (~> 0.3.6)
+      debugger-linecache (~> 1.2.0)
+
+GIT
+  remote: git://github.com/spree/spree_i18n.git
+  revision: 5d3cb47c38efc7d0af425bb2cf2b54f94f2c1368
+  branch: 2-1-stable
+  specs:
+    spree_i18n (3.0.0)
+      globalize (~> 4.0.0.alpha.1)
+      rails-i18n (~> 0.7.3)
+      spree_core (~> 2.1.0)
+
+GIT
   remote: https://github.com/spree/spree_auth_devise.git
   revision: 9417dd85f99e205e0b28b00cb93ef0137171a59f
   branch: 2-1-stable
@@ -10,15 +28,6 @@ GIT
       spree_backend (~> 2.1.0)
       spree_core (~> 2.1.0)
       spree_frontend (~> 2.1.0)
-
-GIT
-  remote: https://github.com/spree/spree_gateway.git
-  revision: 04c51e6bd24e1ea70a548dd12934db98032235ec
-  branch: 2-1-stable
-  specs:
-    spree_gateway (2.1.0.beta)
-      savon (~> 1.2)
-      spree_core (~> 2.1)
 
 GEM
   remote: https://rubygems.org/
@@ -60,9 +69,6 @@ GEM
       tzinfo (~> 0.3.37)
     acts_as_list (0.2.0)
       activerecord (>= 3.0)
-    akami (1.2.0)
-      gyoku (>= 0.4.0)
-      nokogiri (>= 1.4.0)
     arel (4.0.1)
     atomic (1.1.14)
     awesome_nested_set (3.0.0.rc.2)
@@ -88,6 +94,8 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     colorize (0.6.0)
+    columnize (0.3.6)
+    debugger-linecache (1.2.0)
     deface (1.0.0)
       colorize (>= 0.5.8)
       nokogiri (~> 1.6.0)
@@ -102,15 +110,15 @@ GEM
     erubis (2.7.0)
     execjs (2.0.2)
     ffaker (1.22.1)
-    gyoku (0.4.6)
-      builder (>= 2.1.2)
+    globalize (4.0.0.alpha.2)
+      activemodel (>= 4.0.0)
+      activerecord (>= 4.0.0)
+      paper_trail (~> 3.0.0.beta)
     highline (1.6.20)
     hike (1.2.3)
     httparty (0.12.0)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
-    httpi (1.1.1)
-      rack
     i18n (0.6.9)
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
@@ -130,14 +138,16 @@ GEM
     mime-types (1.25.1)
     mini_portile (0.5.2)
     minitest (4.7.5)
-    money (5.1.1)
-      i18n (~> 0.6.0)
+    money (6.0.0)
+      i18n (~> 0.6.4)
     multi_json (1.8.2)
     multi_xml (0.5.5)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
-    nori (1.1.5)
     orm_adapter (0.5.0)
+    paper_trail (3.0.0.rc2)
+      activerecord (>= 3.0, < 5.0)
+      activesupport (>= 3.0, < 5.0)
     paperclip (3.4.2)
       activemodel (>= 3.0.0)
       activerecord (>= 3.0.0)
@@ -162,6 +172,8 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.0.2)
       sprockets-rails (~> 2.0.0)
+    rails-i18n (0.7.4)
+      i18n (~> 0.5)
     railties (4.0.2)
       actionpack (= 4.0.2)
       activesupport (= 4.0.2)
@@ -179,14 +191,6 @@ GEM
       railties (>= 4.0.0, < 5.0)
       sass (>= 3.1.10)
       sprockets-rails (~> 2.0.0)
-    savon (1.2.0)
-      akami (~> 1.2.0)
-      builder (>= 2.1.2)
-      gyoku (~> 0.4.5)
-      httpi (~> 1.1.0)
-      nokogiri (>= 1.4.0)
-      nori (~> 1.1.0)
-      wasabi (~> 2.5.0)
     sdoc (0.3.20)
       json (>= 1.1.3)
       rdoc (~> 3.10)
@@ -224,7 +228,6 @@ GEM
       httparty (~> 0.11)
       json (~> 1.7)
       kaminari (~> 0.14.1)
-      money (~> 5.1)
       paperclip (~> 3.4.1)
       paranoia (~> 2.0)
       rails (~> 4.0.0)
@@ -274,23 +277,22 @@ GEM
       tzinfo
     warden (1.2.3)
       rack (>= 1.0)
-    wasabi (2.5.1)
-      httpi (~> 1.0)
-      nokogiri (>= 1.4.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  byebug!
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
+  money
   rails (= 4.0.2)
   sass-rails (~> 4.0.0)
   sdoc
   spree (= 2.1.3)
   spree_auth_devise!
-  spree_gateway!
+  spree_i18n!
   sqlite3
   turbolinks
   uglifier (>= 1.3.0)
