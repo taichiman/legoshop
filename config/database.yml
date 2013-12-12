@@ -5,6 +5,7 @@ development:
   timeout: 5000
   username: postgres
   password: "1"
+
 test:
   adapter: postgresql
   database: work_spree_russian_test
@@ -12,9 +13,3 @@ test:
   timeout: 5000
   username: postgres
   password: "1"
-
-production:
-  adapter: postgresql
-  database: work_spree_russian_production
-  pool: 5
-  timeout: 5000
