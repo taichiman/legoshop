@@ -9,7 +9,8 @@
 /log/*.log
 /tmp
 
-/public/assets/*
+#Comment because not precompile assets on Heroku at 13 December 2013
+#/public/assets/*
 
 .ruby-version
 .ruby-gemset
