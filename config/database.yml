@@ -1,15 +1,21 @@
+# development:
+#   adapter: postgresql
+#   database: work_spree_russian_development
+#   pool: 5
+#   timeout: 5000
+#   username: postgres
+#   password: "1"
+
+# test:
+#   adapter: postgresql
+#   database: work_spree_russian_test
+#   pool: 5
+#   timeout: 5000
+#   username: postgres
+#   password: "1"
 development:
   adapter: postgresql
-  database: work_spree_russian_development
+  encoding: unicode
+  database: myapp_development
   pool: 5
-  timeout: 5000
-  username: postgres
-  password: "1"
-
-test:
-  adapter: postgresql
-  database: work_spree_russian_test
-  pool: 5
-  timeout: 5000
-  username: postgres
-  password: "1"
+  password:

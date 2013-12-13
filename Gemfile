@@ -43,3 +43,5 @@ gem 'byebug', github: 'deivid-rodriguez/byebug', group: "development"
 gem "money"
 
 gem "pg"
+
+gem 'rails_12factor', group: :production
