@@ -5,3 +5,7 @@ ru:
     subtotal: Стоимость
     login: Войти
     back_to_store: Назад в каталог
+    update: Запомнить
+
+    actions:
+      update: Запомнить
