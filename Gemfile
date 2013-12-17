@@ -38,7 +38,10 @@ gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git
 gem 'spree_i18n', github: 'spree/spree_i18n', branch: '2-1-stable'
 # gem "russian"
 
-gem 'byebug', github: 'deivid-rodriguez/byebug', group: "development"
+group :development do
+  gem 'byebug', github: 'deivid-rodriguez/byebug'  
+  gem 'capistrano', '~> 3.0.1'
+end
 
 gem "money"
 
