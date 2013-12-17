@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-LastSpree::Application.load_tasks
+Legoshop::Application.load_tasks

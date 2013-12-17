@@ -1,8 +1,8 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: work_legoshop_development
+  database: legoshop_development
   pool: 5
   username: root
-  password: 1
+  password: 
   socket: /var/run/mysqld/mysqld.sock

@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-LastSpree::Application.config.secret_key_base = 'b6d28c56f4dd3b32fd14e7a069eb49b17590852448c557b5e1fcd2fa6c7b4325c2cdd487ab4b87e4077dbbedc8a287e5603c858464d56541aec3893e624e7d1f'
+Legoshop::Application.config.secret_key_base = 'b6d28c56f4dd3b32fd14e7a069eb49b17590852448c557b5e1fcd2fa6c7b4325c2cdd487ab4b87e4077dbbedc8a287e5603c858464d56541aec3893e624e7d1f'
