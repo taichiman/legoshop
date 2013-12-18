@@ -20,8 +20,13 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 gem "money"
-gem 'capistrano', '~> 3.0.1'
+gem "unicorn"
 
 group :development do
   gem 'byebug', github: 'deivid-rodriguez/byebug'  
+  
+  gem 'capistrano', '~> 3.0.1'
+  gem 'capistrano-rvm', '~> 0.1.0'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails', '~> 1.1.0'
 end
