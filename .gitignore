@@ -9,8 +9,8 @@
 /log/*.log
 /tmp
 
-#Comment because not precompile assets on Heroku at 13 December 2013
-#/public/assets/*
+/public/assets/
+/public/spree/
 
 .ruby-version
 .ruby-gemset
