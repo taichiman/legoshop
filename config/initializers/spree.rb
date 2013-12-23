@@ -9,6 +9,7 @@ Spree.config do |config|
   config.currency_sign_before_symbol = false
   config.currency_thousands_separator = ","
   config.display_currency = false
+  config.track_inventory_levels = false
 end
 
 Spree.user_class = "Spree::User"
